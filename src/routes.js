@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
-import NotFoundPage from '../components/NotFoundPage';
-import Header from '../components/Header';
-import HomePage from '../components/HomePage';
-import ContactPage from '../components/ContactPage';
-import PortfolioItemPage from '../components/PortfolioItemPage';
-import PortfolioPage from '../components/PortfolioPage';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+
+import HomePage from './pages/HomePage';
+import PortfolioPage from './pages/PortfolioPage';
+import PortfolioItemPage from './pages/PortfolioItemPage';
+import ContactPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const AppRouter = () => (
   <BrowserRouter>
