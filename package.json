@@ -9,9 +9,13 @@
   "author": "mazdak",
   "license": "MIT",
   "scripts": {
+    "start": "node index.js",
     "serve": "live-server public/",
+    "dev-server": "webpack-dev-server",
+    "client": "npm run start --prefix public",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "server": "nodemon src/client.js",
+    "dev": "concurrently \"npm run build\" \"npm run server\""
   },
   "dependencies": {
     "axios": "^0.18.0",
